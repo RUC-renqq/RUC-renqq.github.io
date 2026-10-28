@@ -122,6 +122,18 @@
       font-size: 14px;
     }
 
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-left: 8px;
+      font-style: normal;
+      font-weight: 600;
+    }
+
     ul {
       padding-left: 22px;
     }
@@ -182,7 +194,7 @@
         <h1>Qiangqiang Ren</h1>
         <div class="subtitle">Ph.D. Student, Gaoling School of Artificial Intelligence</div>
         <div class="subtitle">Renmin University of China</div>
-        <div class="subtitle">Information Retrieval · Recommender Systems · Fairness in Ranking · Large Language Models · User Simulation</div>
+        <div class="subtitle">Machine Learning · Information Retrieval · Recommender Systems · Fairness in Ranking · Large Language Models · User Simulation</div>
 
         <p class="contact">
           <a href="mailto:renqq@ruc.edu.cn">Email</a>
@@ -191,12 +203,12 @@
         </p>
 
         <div>
+          <span class="tag">Machine Learning</span>
           <span class="tag">Information Retrieval</span>
           <span class="tag">Recommender Systems</span>
           <span class="tag">Fairness in Ranking</span>
           <span class="tag">Large Language Models</span>
           <span class="tag">User Simulation</span>
-          <span class="tag">Machine Learning</span>
         </div>
       </div>
     </div>
@@ -205,8 +217,8 @@
       <h2>About Me</h2>
       <p>
         I am Qiangqiang Ren, currently a Ph.D. student at the Gaoling School of Artificial Intelligence,
-        Renmin University of China. My research focuses on information retrieval, recommender systems,
-        fairness in ranking algorithms, large language models, and user simulation.
+        Renmin University of China. My research focuses on machine learning, information retrieval,
+        recommender systems, fairness in ranking algorithms, large language models, and user simulation.
       </p>
     </div>
 
@@ -226,12 +238,12 @@
     <div class="card">
       <h2>Research Interests</h2>
       <ul>
+        <li>Machine Learning</li>
         <li>Information Retrieval</li>
         <li>Recommender Systems</li>
         <li>Fairness in Ranking Algorithms</li>
         <li>Large Language Models</li>
         <li>User Simulation</li>
-        <li>Machine Learning</li>
       </ul>
     </div>
 
@@ -243,11 +255,12 @@
         <a href="https://dblp.org/pid/240/5153.html" target="_blank">my DBLP profile</a>.
       </p>
 
-      <h3>Recent Publication</h3>
+      <h3>First-author Publications</h3>
 
       <div class="paper">
         <div class="paper-title">
           An Item-side Competitive Fairness for Recommender Systems
+          <span class="badge">TOIS Accepted</span>
         </div>
         <div>
           <strong>Qiangqiang Ren</strong>, et al.
@@ -257,23 +270,15 @@
         </div>
       </div>
 
-      <h3>First-author Publications</h3>
-
       <div class="paper">
         <div class="paper-title">
           A multi-birth metric learning framework based on binary constraints
         </div>
         <div>
-          <strong>Qiangqiang Ren</strong>, Liming Yang
+          <strong>Qiangqiang Ren</strong>, Chao Yuan, Yifeng Zhao, Liming Yang
         </div>
         <div>
-          <em>Neural Networks</em>, 2022.
-        </div>
-        <div class="doi">
-          DOI:
-          <a href="https://doi.org/10.1016/j.neunet.2022.07.004" target="_blank">
-            10.1016/j.neunet.2022.07.004
-          </a>
+          <em>Neural Networks</em> 154: 165-178, 2022.
         </div>
       </div>
 
@@ -282,16 +287,10 @@
           A novel metric learning framework by exploiting global and local information
         </div>
         <div>
-          <strong>Qiangqiang Ren</strong>, Liming Yang
+          <strong>Qiangqiang Ren</strong>, Chao Yuan, Yifeng Zhao, Liming Yang
         </div>
         <div>
-          <em>Neurocomputing</em>, 2022.
-        </div>
-        <div class="doi">
-          DOI:
-          <a href="https://doi.org/10.1016/j.neucom.2022.08.003" target="_blank">
-            10.1016/j.neucom.2022.08.003
-          </a>
+          <em>Neurocomputing</em> 507: 84-96, 2022.
         </div>
       </div>
 
@@ -303,49 +302,53 @@
           <strong>Qiangqiang Ren</strong>, Liming Yang
         </div>
         <div>
-          <em>Applied Intelligence</em>, 2021.
-        </div>
-        <div class="doi">
-          DOI:
-          <a href="https://doi.org/10.1007/s10489-021-02480-6" target="_blank">
-            10.1007/s10489-021-02480-6
-          </a>
+          <em>Applied Intelligence</em> 52(2): 2154-2170, 2022.
         </div>
       </div>
 
       <h3>Co-authored Publications</h3>
-      <p>
-        Please refer to
-        <a href="https://dblp.org/pid/240/5153.html" target="_blank">my DBLP profile</a>
-        for more co-authored publications.
-      </p>
-    </div>
 
-    <div class="card">
-      <h2>Selected Projects</h2>
+      <div class="paper">
+        <div class="paper-title">
+          YuLan: An Open-source Large Language Model
+        </div>
+        <div>
+          Yutao Zhu, Kun Zhou, Kelong Mao, Wentong Chen, Yiding Sun, Zhipeng Chen,
+          Qian Cao, Yihan Wu, Yushuo Chen, Feng Wang, Lei Zhang, Junyi Li,
+          Xiaolei Wang, Lei Wang, Beichen Zhang, Zican Dong, Xiaoxue Cheng,
+          Yuhan Chen, Xinyu Tang, Yupeng Hou, <strong>Qiangqiang Ren</strong>,
+          Xincheng Pang, Shufang Xie, Wayne Xin Zhao, Zhicheng Dou, Jiaxin Mao,
+          Yankai Lin, Ruihua Song, Jun Xu, Xu Chen, Rui Yan, Zhewei Wei, Di Hu,
+          Wenbing Huang, Ze-Feng Gao, Yueguo Chen, Weizheng Lu, Ji-Rong Wen
+        </div>
+        <div>
+          <em>CoRR</em> abs/2406.19853, 2024.
+        </div>
+      </div>
 
-      <h3>LLM-based Food Delivery User Click Simulator</h3>
-      <div class="meta">Recommender Systems · Large Language Models · User Simulation · Behavior Modeling</div>
-      <p>
-        This project investigates whether large language models can simulate user click behavior
-        in food delivery recommendation scenarios. It compares traditional user simulators such as
-        KuaiSim, vanilla LLM-based simulators, and LLM simulators enhanced with collaborative filtering signals.
-      </p>
-      <ul>
-        <li>Designed both single-click and multi-click user simulation tasks.</li>
-        <li>Constructed user profiles, short-term memory, merchant history, and candidate-level collaborative signals.</li>
-        <li>Evaluated simulation performance using Hit Rate, Accuracy, Precision, Recall, and F1.</li>
-      </ul>
-    </div>
+      <div class="paper">
+        <div class="paper-title">
+          Multi-metric learning by a pair of twin-metric learning framework
+        </div>
+        <div>
+          Min Zhang, Liming Yang, Chao Yuan, <strong>Qiangqiang Ren</strong>
+        </div>
+        <div>
+          <em>Applied Intelligence</em> 52(15): 17490-17507, 2022.
+        </div>
+      </div>
 
-    <div class="card">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming:</strong> Python, SQL, Bash, Git</li>
-        <li><strong>Machine Learning:</strong> PyTorch, Pandas, NumPy, scikit-learn</li>
-        <li><strong>Research:</strong> Information Retrieval, Recommender Systems, Fairness in Ranking, Large Language Models, User Simulation</li>
-        <li><strong>Tools:</strong> Linux, Jupyter, LaTeX, GitHub</li>
-      </ul>
+      <div class="paper">
+        <div class="paper-title">
+          A robust classification framework with mixture correntropy
+        </div>
+        <div>
+          Yidan Wang, Liming Yang, <strong>Qiangqiang Ren</strong>
+        </div>
+        <div>
+          <em>Information Sciences</em> 491: 306-318, 2019.
+        </div>
+      </div>
     </div>
 
     <div class="card">
