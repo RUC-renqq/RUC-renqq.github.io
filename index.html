@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>你的名字 - 个人主页</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #f6f8fa;
+      color: #24292f;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #eaeef2;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #111827;
+    }
+
+    h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-top: 0;
+      color: #111827;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+      color: #1f2937;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #57606a;
+      margin-top: 8px;
+    }
+
+    .contact a {
+      color: #0969da;
+      text-decoration: none;
+      margin-right: 12px;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin: 4px 6px 4px 0;
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .project {
+      margin-bottom: 22px;
+    }
+
+    .meta {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 14px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0969da;
+      color: white !important;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #0759b8;
+      text-decoration: none !important;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      .avatar {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- 个人信息 -->
+    <div class="card header">
+      <!-- 如果没有头像，可以把 img 这一行删掉 -->
+      <img class="avatar" src="avatar.jpg" alt="avatar" />
+
+      <div>
+        <h1>你的名字</h1>
+        <div class="subtitle">研究方向：推荐系统 · 大语言模型 · 用户行为模拟</div>
+
+        <p class="contact">
+          <a href="mailto:your_email@example.com">Email</a>
+          <a href="https://github.com/your_github_username" target="_blank">GitHub</a>
+          <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+          <a href="./cv.pdf" target="_blank">CV</a>
+        </p>
+
+        <div>
+          <span class="tag">Recommender Systems</span>
+          <span class="tag">Large Language Models</span>
+          <span class="tag">User Simulation</span>
+          <span class="tag">Information Retrieval</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        我是你的名字，目前关注推荐系统、大语言模型、信息检索和用户行为模拟等方向。
+        我的研究兴趣包括如何利用 LLM 模拟真实用户在推荐系统中的点击行为，
+        以及如何结合协同过滤、用户画像和短期记忆构建更可靠的用户模拟器。
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div class="card">
+      <h2>Education</h2>
+
+      <h3>某某大学，计算机科学与技术，硕士</h3>
+      <div class="meta">2023 - 2026</div>
+      <p>
+        研究方向：推荐系统、大语言模型、用户行为模拟。
+      </p>
+
+      <h3>某某大学，软件工程，本科</h3>
+      <div class="meta">2019 - 2023</div>
+      <p>
+        主修课程：数据结构、算法、机器学习、数据库系统、操作系统等。
+      </p>
+    </div>
+
+    <!-- Research Interests -->
+    <div class="card">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>LLM-based User Simulation</li>
+        <li>Recommender Systems</li>
+        <li>Food Delivery Recommendation</li>
+        <li>Information Retrieval</li>
+        <li>User Behavior Modeling</li>
+        <li>Evaluation of Interactive Recommendation Systems</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="card">
+      <h2>Selected Projects</h2>
+
+      <div class="project">
+        <h3>LLM-based Food Delivery User Simulator</h3>
+        <div class="meta">Python · LLM API · Recommender Systems · User Simulation</div>
+        <p>
+          构建基于大语言模型的外卖推荐用户点击模拟器，
+          对比传统用户模拟器 KuaiSim、纯 LLM 方法以及加入协同过滤信息的 LLM 方法。
+        </p>
+        <ul>
+          <li>设计 single-click 和 multi-click 两类用户点击模拟任务。</li>
+          <li>构建用户画像、短期记忆、商家历史关系和协同过滤信号。</li>
+          <li>使用 Accuracy、Precision、Recall、F1 和 Hit Rate 等指标进行评估。</li>
+          <li>分析自回归上下文和真实上下文对模拟效果的影响。</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Recommendation Evaluation Toolkit</h3>
+        <div class="meta">Python · Evaluation Metrics</div>
+        <p>
+          实现推荐系统和点击模拟任务的评估工具，包括单点击命中率、多点击混淆矩阵、
+          Precision、Recall、F1、HitAny 和 Jaccard 等指标。
+        </p>
+      </div>
+    </div>
+
+    <!-- Publications -->
+    <div class="card">
+      <h2>Publications</h2>
+      <p>
+        如果你有论文，可以按照下面格式填写：
+      </p>
+      <ul>
+        <li>
+          <strong>论文标题</strong><br />
+          作者1, 作者2, 你的名字. 会议/期刊名称, 年份.
+        </li>
+      </ul>
+      <p>
+        如果暂时没有论文，可以写：Working papers are in progress.
+      </p>
+    </div>
+
+    <!-- Skills -->
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python, SQL, Bash, Git</li>
+        <li><strong>Machine Learning:</strong> PyTorch, Pandas, NumPy, scikit-learn</li>
+        <li><strong>Research:</strong> Recommender Systems, LLMs, Information Retrieval, User Modeling</li>
+        <li><strong>Tools:</strong> Linux, Jupyter, LaTeX, GitHub, OpenAI API</li>
+      </ul>
+    </div>
+
+    <!-- Awards -->
+    <div class="card">
+      <h2>Awards & Honors</h2>
+      <ul>
+        <li>奖项名称，年份</li>
+        <li>奖学金名称，年份</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:your_email@example.com">your_email@example.com</a>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/your_github_username" target="_blank">
+          https://github.com/your_github_username
+        </a>
+      </p>
+    </div>
+
+    <div class="footer">
+      © 2026 你的名字. Powered by GitHub Pages.
+    </div>
+
+  </div>
+
+</body>
+</html>
